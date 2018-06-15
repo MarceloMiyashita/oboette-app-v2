@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Conteúdo visto</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-item *ngFor="let estudo of estudos | async"> 
+    {{ estudo.nome }}
+    
+    <button clear="" ion-button item-end icon-left (click)="abreDetalhe(estudo)" (click)="presentLoading()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+
+   <button clear="" ion-button item-end icon-left color="danger" (click)="excluir(estudo.id)">
+      <ion-icon name="trash"></ion-icon>
+    </button>
+ 
+  </ion-item>
+</ion-content>

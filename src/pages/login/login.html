@@ -1,0 +1,56 @@
+<!--<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>CONTROLE DE ESTUDOS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-card>
+
+  <ion-card-header class="login">
+  <ion-icon style="zoom:5;" color="primary" name="ios-lock"></ion-icon>
+  </ion-card-header>
+
+  <ion-card-content>
+    
+    <ion-item>
+      <ion-label floating>INFORME O E-MAIL</ion-label>
+      <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>INFORME A SENHA</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+
+    <button ion-button block (click)="login(user)">LOGIN</button>
+    <button ion-button block color="secondary" (click)="register(user)">CADASTRAR</button>
+  
+  </ion-card-content>
+
+</ion-card>
+
+</ion-content>-->
+
+<ion-content class="background">
+    <ion-card>
+      <ion-card-header>
+        FORMULÁRIO DE ACESSO
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list no-line>
+          <ion-item>
+              <ion-input placeholder="INFORME O SEU E-MAIL" type="text" [(ngModel)]="user.email"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-input placeholder="INFORME A SENHA" type="password" [(ngModel)]="user.password"></ion-input>
+          </ion-item>
+          <a>Entre com seus dados</a>
+          <button ion-button color="light" block (click)="login(user)">LOGIN</button>
+          <p>ou</p>
+          <button ion-button block  (click)="register(user)">CADASTRAR-SE</button>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+    
+  </ion-content>

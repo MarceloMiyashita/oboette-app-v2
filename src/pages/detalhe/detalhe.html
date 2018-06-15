@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Detalhes do estudo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+     <h1>Detalhes do Kana:</h1>
+    </ion-card-header>
+   <!-- <ion-card-content>
+      <h1>{{curso.nome}}</h1>
+      <h1>{{curso.palavra}}</h1>
+      <h1>{{curso.leitura}}</h1>
+      <h1>{{curso.traducao}}</h1>
+    </ion-card-content>-->
+    <ion-card-content>
+
+      <ion-list>
+        <ion-list-header>
+        </ion-list-header>
+        <ion-item><h2>Data:  {{curso.date}}</h2></ion-item>
+        <ion-item><h2>Kana:  {{curso.nome}}</h2></ion-item>
+        <ion-item><h2>Palavra:  {{curso.palavra}}</h2></ion-item>
+        <ion-item><h2>Kanji:  {{curso.kanji}}</h2></ion-item>
+        <ion-item><h2>Leitura:  {{curso.leitura}}</h2></ion-item>
+        <ion-item><h2>Tradução:  {{curso.traducao}}</h2></ion-item>
+       
+
+        <ion-item><h2>Link da url:   <a href="{{curso.url}}">{{curso.url}}</a></h2></ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
